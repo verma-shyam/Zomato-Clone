@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato</title>
+    <link rel="stylesheet" href="project1.css">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfwWmK7yMcJq2Ne1xxpa5_6WO5_NHyYpcREg&s">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+   <header>
+        <div class="img-container">
+            <img src="https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png">
+        </div>
+        <div class="h-bodysec">       
+             <nav class="nav">
+             <div class="container cont1">
+                <div class="logo-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" width="10" height="10" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 gvsUip"><title>download-app</title><path d="M18.5793 9.18939H16.5865H16.3199C15.7307 9.18939 15.2529 9.6672 15.2529 10.2583V10.3742C15.2529 10.9659 15.7307 11.444 16.3207 11.444H18.3156H18.5793C19.1696 11.444 19.6488 10.9639 19.6488 10.3742L19.6477 10.2569C19.6488 9.6672 19.1696 9.18939 18.5793 9.18939Z"></path><path d="M18.5804 6.52262H18.1097V1.35122C18.1097 0.607964 17.5017 0 16.7582 0H7.84167C7.09841 0 6.49045 0.608249 6.49045 1.35122V5.06151C4.69196 6.07821 2.83696 7.14029 2.83296 7.14286C1.82597 7.5573 0.350586 8.89453 0.350586 12.0522C0.350586 12.3342 0.369139 12.5945 0.395113 12.846C0.40339 12.9197 0.412524 12.9904 0.422514 13.0615C0.448488 13.2462 0.481027 13.4229 0.519845 13.5907C0.533831 13.6506 0.544678 13.7131 0.559805 13.7705C0.612039 13.9646 0.67255 14.1467 0.740482 14.32C0.774733 14.4059 0.811839 14.4841 0.84923 14.5646C0.88919 14.6494 0.929436 14.7327 0.972535 14.8106C1.02249 14.9045 1.07244 14.995 1.12724 15.0809C1.14037 15.1009 1.15464 15.1192 1.16805 15.1394C2.46847 17.1052 4.8675 17.114 4.8675 17.114H6.49045V18.6494C6.49045 19.3918 7.09841 19.9997 7.84167 19.9997H16.7579C17.5014 19.9997 18.1094 19.3915 18.1094 18.6494V16.7767H18.3155V16.7755H18.5784C19.1695 16.7755 19.6487 16.2974 19.6476 15.7063L19.6487 15.5898C19.6476 14.9996 19.1695 14.5229 18.5792 14.5229H18.3155H16.5861H16.3195C15.7292 14.5229 15.2525 15.0007 15.2525 15.5907V15.7091C15.2525 16.2977 15.7304 16.7775 16.3203 16.7775H17.1692V17.5008H7.43036V7.79877C7.91959 7.48851 8.37256 7.18995 8.63088 6.98987C9.93957 5.97774 11.1818 5.17169 11.3499 4.4407C11.5688 3.49222 10.8407 2.69302 9.57765 3.34922C9.17976 3.55587 8.36315 4.00885 7.43036 4.53261V2.14129L17.1692 2.14271V6.52205H16.5861V6.52319H16.3209C15.7304 6.52319 15.2511 7.001 15.2511 7.59269V7.70858C15.2511 8.29999 15.7303 8.77665 16.3195 8.77665H16.5846H18.3141H18.5798C19.1695 8.77665 19.6476 8.29884 19.6476 7.70858V7.58955C19.6487 7.00186 19.1709 6.52262 18.5804 6.52262ZM12.2986 17.9752C12.6731 17.9752 12.9751 18.2774 12.9751 18.6511C12.9751 19.0255 12.6728 19.3267 12.2986 19.3267C11.9256 19.3267 11.6242 19.0247 11.6242 18.6511C11.6247 18.2786 11.927 17.9752 12.2986 17.9752ZM13.7266 1.30098H10.8735C10.7839 1.30098 10.7097 1.2282 10.7097 1.13829C10.7097 1.04695 10.7839 0.974169 10.8735 0.974169H13.7266C13.8163 0.974169 13.8893 1.04667 13.8893 1.13829C13.8893 1.22792 13.8163 1.30098 13.7266 1.30098Z"></path><path d="M18.5788 11.8561H18.3151H16.3193C15.7302 11.8561 15.251 12.3353 15.251 12.9253V13.0423C15.251 13.6329 15.7291 14.1107 16.3193 14.1107H16.5845H18.3139H18.5782C19.1693 14.1107 19.646 13.6329 19.6474 13.0423V12.9253C19.6472 12.3353 19.1705 11.8561 18.5788 11.8561Z"></path></svg>
+                    <a href="https://www.zomato.com/mobile" style="color: white; text-decoration: none; ;"><p style="font-size: 15px; font-weight: 300">Get the App</p></a>
+                </div>
+                <ul class="first">
+                    <li><a>Investor Relations</a></li>
+                    <li><a>Add Resturant</a></li>
+                    <li><a>Log in</a></li>
+                    <li><a>Sign up</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="h-body">
+            <div class="container-h-logo"> 
+            <img class="zomato-logo" src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png">
+            <h1>Discover the best food & drinks in Bokaro
+            </h1>
+            <div class="search-container">
+                <div class="img-loc">
+                    <i class="fa-solid fa-location-dot fa-xl" style="color: #ff0000;"></i>
+                    <input class="inp1" type="text" placeholder="Search Location">
+               
+                    </input>
+                    <i class="fa-solid fa-caret-down fa-xl" style="margin-left: 3px;"></i>
+                    
+                </div>
+                <span class="line">|</span>
+                <div class="img-search">
+                    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                </div>
+                    <input class="inp2" type="text" placeholder="Search for restaurant  cuisine or a dish " style="font-size: 18px;"></input>
+
+            </div>
+            </div>
+        </div>
+        </div>
+
+   </header> 
+
+   <img class="img-big" src="https://b.zmtcdn.com/data/o2_assets/e067a1cf0d3fe27b366402b98b994e9f1716296909.png">
+   <div class="container1">
+    <h3>Inspiration for your first order</h3>
+    <section class="sec1">
+        <div class="box1 cont1img">
+            <a href=""><img src="https://b.zmtcdn.com/data/dish_images/c953e5ca07150e9a51f8b21102e20f7e1634805157.png"></a>
+            <a><p>Chole Bhature</p></a>
+        </div>
+        <div class="box2 cont1img">
+            <a href=""><img src="https://b.zmtcdn.com/data/o2_assets/2b5a5b533473aada22015966f668e30e1633434990.png"></a>
+            <a><p>Paratha</p></a>
+        </div>
+        <div class="box3 cont1img">
+            <a href=""><img src="https://b.zmtcdn.com/data/dish_images/ccb7dc2ba2b054419f805da7f05704471634886169.png"></a>
+            <a><p>Burger</p></a>
+        </div>
+        <div class="box4 cont1img">
+            <a href=""><img src="https://b.zmtcdn.com/data/o2_assets/09a9b82b5bdda939b78f3daeb6c3911c1676032839.png"></a>
+            <a><p>Coffee</p></a>
+        </div>
+        <div class="box5 cont1img">
+            <a href=""><img src="https://b.zmtcdn.com/data/dish_images/197987b7ebcd1ee08f8c25ea4e77e20f1634731334.png"></a>
+            <a><p>Chicken</p></a>
+        </div>
+        <div class="box6 cont1img">
+            <a href=""><img src="https://b.zmtcdn.com/data/o2_assets/fc641efbb73b10484257f295ef0b9b981634401116.png"></a>
+            <a><p>Sandwich</p></a>
+        </div>
+    </section>
+   </div>
+
+   <div class="container2">
+    <h3>Top brands for you</h3>
+    <section class="sec1">
+        <div class="box1 cont1img">
+            <a href=""><img src="https://b.zmtcdn.com/data/brand_creatives/logos/22529ff52d41a4aa3b36ac1e7e0c0db3_1605099406.png?output-format=webp"></a>
+            <a><p>Haldiram's</p></a>
+        </div>
+        <div class="box2 cont1img">
+            <a href=""><img src="https://b.zmtcdn.com/data/brand_creatives/logos/6a11fd0f30c9fd9ceaff2f5b21f61d23_1617187857.png?output-format=webp"></a>
+            <a><p>Burgur King</p></a>
+        </div>
+        <div class="box3 cont1img">
+            <a href=""><img src="https://b.zmtcdn.com/data/brand_creatives/logos/84edd5489389f21069c09f0c88ea8abb_1628179220.png?output-format=webp"></a>
+            <a><p>Theobroma</p></a>
+        </div>
+        <div class="box4 cont1img">
+            <a href=""><img src="https://b.zmtcdn.com/data/brand_creatives/logos/1356425eff0c9acd8ab6b0ad351759e4_1611253489.png?output-format=webp"></a>
+            <a><p>Bikanervala</p></a>
+        </div>
+        <div class="box5 cont1img">
+            <a href=""><img src="https://b.zmtcdn.com/data/brand_creatives/logos/bd4fa3f294e58ed604f80c2525c3cac0_1717413410.png?output-format=webp"></a>
+            <a><p>Bakingo</p></a>
+        </div>
+        <div class="box6 cont1img">
+            <a href=""><img src="https://b.zmtcdn.com/data/brand_creatives/logos/26155927d30d8e56d537b65d6a5b9969_1617944079.png?output-format=webp"></a>
+            <a><p style="font-size: 20px; margin-left: 10px;">The Burgur Club</p></a>
+        </div>
+    </section>
+   </div>
+   <h1 class="heading1">Food Delivery Restaurants in</h1>
+   
+   <!-- Container start -->
+   <section class="sec2">
+   <!-- box1 -->
+   
+   <div class="hero-img">
+    <a href="https://www.zomato.com/ncr/haldirams-surajpur-noida/order">
+        <img class="hero-pic" src="https://b.zmtcdn.com/data/pictures/chains/0/550/9361ee4d0e18519da526b87f81f067ae_o2_featured_v2.jpg?output-format=webp">
+    </a>
+        <div class="hero-img-head">
+        <a href="https://www.zomato.com/ncr/haldirams-surajpur-noida/order"><p class="text1">Haldiram;s</p></a>
+        <div class="hero-img-rate">
+           <h5>3.8</h5>
+           <i class="fa-regular fa-star fa-sm" style="color: #ffffff;"></i>
+        </div>
+    </div>
+    <div class="hero-img-loc">
+        <p class="name">North Indian Chinese</p>
+        <p class="price">$2 for one</p>
+    </div>
+    <div class="hero-img-time">
+        <p>31min</p>
+    </div>
+   </div>
+
+
+<!-- box2 -->
+    <div class="hero-img">
+    <a href="https://www.zomato.com/ncr/cake-sports-alpha-1-greater-noida/order">
+    <img class="hero-pic" src="https://b.zmtcdn.com/data/pictures/5/20367785/8d880981302bd6da7945a0a0b38f4972_o2_featured_v2.jpg">
+    </a>
+    <div class="hero-img-head">
+        <a href="https://www.zomato.com/ncr/cake-sports-alpha-1-greater-noida/order"><p class="text1">Cake Sports</p></a>
+        <div class="hero-img-rate">
+           <h5>3.6</h5>
+           <i class="fa-regular fa-star fa-sm" style="color: #ffffff;"></i>
+        </div>
+    </div>
+    <div class="hero-img-loc">
+        <p class="name">Bakery</p>
+        <p class="price">$2 for one</p>
+    </div>
+    <div class="hero-img-time">
+        <p>31min</p>
+    </div>
+   </div>
+
+   <!-- box3 -->
+
+   <div class="hero-img">
+    <a href="https://www.zomato.com/ncr/kfc-gamma-1-greater-noida/order">
+    <img class="hero-pic" src="https://b.zmtcdn.com/data/pictures/chains/1/931/67881624cc7fe73bc70ee83cfa3fe057_o2_featured_v2.jpg">
+    </a>
+    <div class="hero-img-head">
+        <a href="https://www.zomato.com/ncr/kfc-phi-3-greater-noida/order"><p class="text1">KFC</p></a>
+        <div class="hero-img-rate">
+           <h5>4.6</h5>
+           <i class="fa-regular fa-star fa-sm" style="color: #ffffff;"></i>
+        </div>
+    </div>
+    <div class="hero-img-loc">
+        <p class="name">Burger Rolls, Fast Food</p>
+        <p class="price">$2 for one</p>
+    </div>
+    <div class="hero-img-time">
+        <p>25min</p>
+    </div>
+   </div>
+
+   <!-- box4 -->
+   <div class="hero-img">
+    <a href="https://www.zomato.com/ncr/pizza-hut-knowledge-park/order">
+    <img class="hero-pic" src="https://b.zmtcdn.com/data/pictures/chains/6/246/e81f66522df2f3dbc3c9d0aa3ce0756d_o2_featured_v2.jpg">
+    </a>
+    <div class="hero-img-head">
+        <a href="https://www.zomato.com/ncr/pizza-hut-knowledge-park/order"><p class="text1">Pizza Hut</p></a>
+        <div class="hero-img-rate">
+           <h5>3.6</h5>
+           <i class="fa-regular fa-star fa-sm" style="color: #ffffff;"></i>
+        </div>
+    </div>
+    <div class="hero-img-loc">
+        <p class="name">Pizza, Fast Food, italian,dosa</p>
+        <p class="price">$2 for one</p>
+    </div>
+    <div class="hero-img-time">
+        <p>35min</p>
+    </div>
+   </div>
+
+   <!-- box5 -->
+   <div class="hero-img">
+    <a href="https://www.zomato.com/ncr/biryani-n-grill-beta-1-greater-noida/order">
+    <img class="hero-pic" src="https://b.zmtcdn.com/data/pictures/5/19301915/4cffa8ce782c13604f5094622270f40e_o2_featured_v2.jpg">
+    </a>
+    <div class="hero-img-head">
+        <a href="https://www.zomato.com/ncr/biryani-n-grill-beta-1-greater-noida/order"><p class="text1">Biryani and Grill</p></a>
+        <div class="hero-img-rate">
+           <h5>2.6</h5>
+           <i class="fa-regular fa-star fa-sm" style="color: #ffffff;"></i>
+        </div>
+    </div>
+    <div class="hero-img-loc">
+        <p class="name">Biryani North Indian</p>
+        <p class="price">$2 for one</p>
+    </div>
+    <div class="hero-img-time">
+        <p>20min</p>
+    </div>
+   </div>
+
+   <!-- box6 -->
+
+   <div class="hero-img">
+    <a href="https://www.zomato.com/ncr/mojo-pizza-2x-toppings-sector-pi-greater-noida/order">
+    <img class="hero-pic" src="https://b.zmtcdn.com/data/pictures/chains/7/18619067/54b6de34323395a3b10897e48bd2a6e5_o2_featured_v2.jpg">
+    </a>
+    <div class="hero-img-head">
+        <a href="https://www.zomato.com/ncr/mojo-pizza-2x-toppings-sector-pi-greater-noida/order"><p class="text1">Mozo Pizza</p></a>
+        <div class="hero-img-rate">
+           <h5>4.6</h5>
+           <i class="fa-regular fa-star fa-sm" style="color: #ffffff;"></i>
+        </div>
+    </div>
+    <div class="hero-img-loc">
+        <p class="name">Pizza, italian, pasta, fastfood</p>
+        <p class="price">$2 for one</p>
+    </div>
+    <div class="hero-img-time">
+        <p>30min</p>
+    </div>
+   </div>
+
+   <!-- box7 -->
+
+   <div class="hero-img">
+    <a href="https://www.zomato.com/ncr/dominos-pizza-alpha-1/order">
+    <img class="hero-pic" src="https://b.zmtcdn.com/data/pictures/chains/3/143/e3ed8367a0cdaca02420c92034b7c762_o2_featured_v2.jpg"></a>
+    <div class="hero-img-head">
+        <a href="https://www.zomato.com/ncr/dominos-pizza-alpha-1/order"><p class="text1">Domino;s Pizza</p></a>
+        <div class="hero-img-rate">
+           <h5>4.6</h5>
+           <i class="fa-regular fa-star fa-sm" style="color: #ffffff;"></i>
+        </div>
+    </div>
+    <div class="hero-img-loc">
+        <p class="name">Pizza, Bevrages, Desserts</p>
+        <p class="price">$2 for one</p>
+    </div>
+    <div class="hero-img-time">
+        <p>20min</p>
+    </div>
+   </div>
+
+   <!-- box8 -->
+
+   <div class="hero-img">
+    <a href="https://www.zomato.com/ncr/subway-alpha-1/order">
+    <img class="hero-pic" src="https://b.zmtcdn.com/data/pictures/chains/7/147/1ee6b277acede4b52b5432c0093925d0_o2_featured_v2.jpg"></a>
+    <div class="hero-img-head">
+        <a href="https://www.zomato.com/ncr/subway-alpha-1/order"><p class="text1">Subway</p></a>
+        <div class="hero-img-rate">
+           <h5>4.1</h5>
+           <i class="fa-regular fa-star fa-sm" style="color: #ffffff;"></i>
+        </div>
+    </div>
+    <div class="hero-img-loc">
+        <p class="name">Healthy Food, Sandwich</p>
+        <p class="price">$2 for one</p>
+    </div>
+    <div class="hero-img-time">
+        <p>25min</p>
+    </div>
+   </div>
+
+   <!-- box9 -->
+
+   <div class="hero-img">
+    <a href="https://www.zomato.com/ncr/the-burger-club-phi-3-greater-noida/order">
+    <img class="hero-pic" src="https://b.zmtcdn.com/data/pictures/chains/3/17953943/816872e9f1fcc43304e21a0f050f5f21_o2_featured_v2.jpg"></a>
+    <div class="hero-img-head">
+        <a href="https://www.zomato.com/ncr/the-burger-club-phi-3-greater-noida/order"><p class="text1">The Burger Club</p></a>
+        <div class="hero-img-rate">
+           <h5>3.1</h5>
+           <i class="fa-regular fa-star fa-sm" style="color: #ffffff;"></i>
+        </div>
+    </div>
+    <div class="hero-img-loc">
+        <p class="name">Burger, Fast food, Coffee</p>
+        <p class="price">$2 for one</p>
+    </div>
+    <div class="hero-img-time">
+        <p>27min</p>
+    </div>
+   </div>
+
+      <!-- box10 -->
+   
+      <div class="hero-img">
+        <a href="https://www.zomato.com/ncr/burger-king-jaypee-greens-greater-noida/order">
+        <img class="hero-pic" src="https://b.zmtcdn.com/data/pictures/chains/8/310078/2b44f5f85208e5ddd40c5f5b8e8cec23_o2_featured_v2.jpg"></a>
+        <div class="hero-img-head">
+            <a href="https://www.zomato.com/ncr/burger-king-jaypee-greens-greater-noida/order"><p class="text1">Burger King</p></a>
+            <div class="hero-img-rate">
+               <h5>3.8</h5>
+               <i class="fa-regular fa-star fa-sm" style="color: #ffffff;"></i>
+            </div>
+        </div>
+        <div class="hero-img-loc">
+            <p class="name">Burger, Fastfood, Desserts</p>
+            <p class="price">$3 for one</p>
+        </div>
+        <div class="hero-img-time">
+            <p>31min</p>
+        </div>
+       </div>
+    
+    
+    <!-- box11 -->
+        <div class="hero-img">
+            <a href="https://www.zomato.com/ncr/bikanervala-omega-2/order">
+        <img class="hero-pic" src="https://b.zmtcdn.com/data/pictures/chains/1/491/aa50c08ea5ade50a6d1c2d7aca242a1c_o2_featured_v2.jpg"></a>
+        <div class="hero-img-head">
+            <a href="https://www.zomato.com/ncr/bikanervala-alpha-2-greater-noida/order"><p class="text1">Bikanervala</p></a>
+            <div class="hero-img-rate">
+               <h5>3.6</h5>
+               <i class="fa-regular fa-star fa-sm" style="color: #ffffff;"></i>
+            </div>
+        </div>
+        <div class="hero-img-loc">
+            <p class="name">Mithai, North Indian</p>
+            <p class="price">$3 for one</p>
+        </div>
+        <div class="hero-img-time">
+            <p>25min</p>
+        </div>
+       </div>
+    
+       <!-- box12 -->
+    
+       <div class="hero-img">
+        <a href="https://www.zomato.com/ncr/mad-over-donuts-delta-1-greater-noida/order">
+        <img class="hero-pic" src="https://b.zmtcdn.com/data/pictures/chains/0/18416840/ed8ddfda74131b3a0dadeba9c77e48a5_o2_featured_v2.jpg"></a>
+        <div class="hero-img-head">
+           < a href="https://www.zomato.com/ncr/mad-over-donuts-delta-1-greater-noida/order"> <p class="text1">Made over Donuts</p></a>
+            <div class="hero-img-rate">
+               <h5>4.6</h5>
+               <i class="fa-regular fa-star fa-sm" style="color: #ffffff;"></i>
+            </div>
+        </div>
+        <div class="hero-img-loc">
+            <p class="name">Bakery, Desserts</p>
+            <p class="price">$3 for one</p>
+        </div>
+        <div class="hero-img-time">
+            <p>25min</p>
+        </div>
+       </div>
+    
+       <!-- box13 -->
+       <div class="hero-img">
+        <a href="https://www.zomato.com/ncr/bikkgane-biryani-jaypee-greens/order">
+        <img class="hero-pic" src="https://b.zmtcdn.com/data/pictures/chains/3/307893/2738bd3dfa84f54d62587a1f5af1c8fe_o2_featured_v2.jpg"></a>
+        <div class="hero-img-head">
+            <a href="https://www.zomato.com/ncr/bikkgane-biryani-jaypee-greens/order"><p class="text1">Bikkgane Biryani</p></a>
+            <div class="hero-img-rate">
+               <h5>3.6</h5>
+               <i class="fa-regular fa-star fa-sm" style="color: #ffffff;"></i>
+            </div>
+        </div>
+        <div class="hero-img-loc">
+            <p class="name">Biryani, Hydrabadi</p>
+            <p class="price">$3 for one</p>
+        </div>
+        <div class="hero-img-time">
+            <p>35min</p>
+        </div>
+       </div>
+    
+       <!-- box14 -->
+       <div class="hero-img">
+        <a href="https://www.zomato.com/ncr/burger-singh-big-punjabi-burgers-1-alpha-1-greater-noida/order">
+        <img class="hero-pic" src="https://b.zmtcdn.com/data/pictures/chains/1/310301/0bb4ccbc6a9fb81b05c4870715419519_o2_featured_v2.jpg"></a>
+        <div class="hero-img-head">
+            <a href="https://www.zomato.com/ncr/burger-singh-big-punjabi-burgers-1-alpha-1-greater-noida/order"><p class="text1">Burger Singh</p></a>
+            <div class="hero-img-rate">
+               <h5>2.6</h5>
+               <i class="fa-regular fa-star fa-sm" style="color: #ffffff;"></i>
+            </div>
+        </div>
+        <div class="hero-img-loc">
+            <p class="name">Burger, FastFood</p>
+            <p class="price">$2 for one</p>
+        </div>
+        <div class="hero-img-time">
+            <p>20min</p>
+        </div>
+       </div>
+    
+       <!-- box15 -->
+    
+       <div class="hero-img">
+        <a href="https://www.zomato.com/ncr/rollsking-alpha-1-greater-noida/order">
+        <img class="hero-pic" src="https://b.zmtcdn.com/data/pictures/9/18763399/60903234b129719d817759e2ae50351c_o2_featured_v2.png"></a>
+        <div class="hero-img-head">
+            <a href="https://www.zomato.com/ncr/rolls-king-chi-3-greater-noida/order"><p class="text1">Rolls King</p></a>
+            <div class="hero-img-rate">
+               <h5>4.6</h5>
+               <i class="fa-regular fa-star fa-sm" style="color: #ffffff;"></i>
+            </div>
+        </div>
+        <div class="hero-img-loc">
+            <p class="name">Rolls,Pizza, italian</p>
+            <p class="price">$2 for one</p>
+        </div>
+        <div class="hero-img-time">
+            <p>30min</p>
+        </div>
+       </div>
+    
+       <!-- box16 -->
+    
+       <div class="hero-img">
+        <a href="https://www.zomato.com/ncr/momo-shomo-alpha-1-greater-noida/order">
+        <img class="hero-pic" src="https://www.zomato.com/ncr/momo-shomo-alpha-1-greater-noida/order"></a>
+        <div class="hero-img-head">
+            <a href="https://www.zomato.com/ncr/momo-shomo-alpha-1-greater-noida/order"><p class="text1">Momo Shomo</p></a>
+            <div class="hero-img-rate">
+               <h5>4.6</h5>
+               <i class="fa-regular fa-star fa-sm" style="color: #ffffff;"></i>
+            </div>
+        </div>
+        <div class="hero-img-loc">
+            <p class="name">Momos ,FastFood</p>
+            <p class="price">$2 for one</p>
+        </div>
+        <div class="hero-img-time">
+            <p>20min</p>
+        </div>
+       </div>
+    
+       <!-- box17 -->
+    
+       <div class="hero-img">
+        <a href="">
+        <img class="hero-pic" src="https://b.zmtcdn.com/data/pictures/chains/6/18384116/c5690c0d4b5da12d5dfd31ed3c33c83c_o2_featured_v2.jpg"></a>
+        <div class="hero-img-head">
+            <a href="https://www.zomato.com/ncr/theobroma-alpha-2-greater-noida/order"><p class="text1">Theoobroma</p></a>
+            <div class="hero-img-rate">
+               <h5>4.1</h5>
+               <i class="fa-regular fa-star fa-sm" style="color: #ffffff;"></i>
+            </div>
+        </div>
+        <div class="hero-img-loc">
+            <p class="name">Bakery,Desserts</p>
+            <p class="price">$2 for one</p>
+        </div>
+        <div class="hero-img-time">
+            <p>25min</p>
+        </div>
+       </div>
+    
+       <!-- box18 -->
+    
+       <div class="hero-img">
+        <a href="https://www.zomato.com/ncr/keventers-ice-cream-alpha-2-greater-noida/order">
+        <img class="hero-pic" src="https://b.zmtcdn.com/data/pictures/chains/9/19184439/3273e33992ff500987a70a2c0217d8e4_o2_featured_v2.jpg"></a>
+        <div class="hero-img-head">
+            <a href="https://www.zomato.com/ncr/nic-ice-creams-alpha-2-greater-noida/order"><p class="text1">NIC Ice cream</p></a>
+            <div class="hero-img-rate">
+               <h5>3.1</h5>
+               <i class="fa-regular fa-star fa-sm" style="color: #ffffff;"></i>
+            </div>
+        </div>
+        <div class="hero-img-loc">
+            <p class="name">Ice Cream, Desserts</p>
+            <p class="price">$2 for one</p>
+        </div>
+        <div class="hero-img-time">
+            <p>27min</p>
+        </div>
+       </div>
+
+    </section>
+    <footer>
+        <div class="foot-main">
+            <section class="foot-sec1">
+                <img src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png?fit=around|198:42&crop=198:42;*,*">
+                <div class="div2">
+                    <div class="india">
+                        <img src="data:image/jpeg;base64,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">
+                        <span>India</span>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="english">
+                        <i class="fa-solid fa-globe"></i>
+                        <span>English</span>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </div>
+
+            </section>
+            <section class="foot-sec2">
+                <div class="div11 fcol">
+                    <h6 style="margin-left: 25px;">ABOUT ZOMATO</h6>
+                    <UL>
+                        <a href="https://www.zomato.com/who-we-are">Who We Are</a>
+                        <a href="https://blog.zomato.com/">Blog</a>
+                        <a href="https://www.zomato.com/careers">Work With Us</a>
+                        <a href="https://www.zomato.com/investor-relations">Investor Relation</a>
+                        <a href="https://www.zomato.com/report-fraud">Repot Fraud</a>
+                        <a href="https://blog.zomato.com/press-kit">Press Kit</a>
+                        <a href="https://www.zomato.com/contact">Contact Us</a>
+                    </UL>
+                </div>
+                <div class="div12 fcol">
+                    <h6 style="margin-left: 30px;">ZOMAVERSE</h6>
+                    <ul>
+                        <a href="https://www.zomato.com/">Zomato</a>
+                        <a href="https://www.blinkit.com/">Blinkit</a>
+                        <a href="https://www.feedingindia.org/">Feeding India</a>
+                        <a href="https://www.hyperpure.com/">Hyperpure</a>
+                        <a href="https://www.zomato.com/zomaland">Zomaland</a>
+                        <a href="https://www.weatherunion.com/">Weather Union</a>
+                    </ul>
+                </div>
+                <div class="div13 fcol">
+                    <h6>FOR RESTURANTS</h6>
+                    <ul>
+                        <a href="https://www.zomato.com/partner_with_us">Partner With Us</a>
+                        <a href="https://play.google.com/store/apps/details?id=com.application.services.partner&hl=en_IN&gl=US">Apps For You</a>
+                    </ul>
+                </div>
+                <div class="div14 fcol">
+                    <h6>LEARN MORE</h6>
+                    <ul>
+                        <a href="https://www.zomato.com/privacy">Privacy</a>
+                        <a href="https://www.zomato.com/security">Security</a>
+                        <a href="https://www.zomato.com/conditions">Terms</a>
+                        <a href="https://www.zomato.com/directory">Sitemap</a>
+                    </ul>
+                </div>
+                <div class="div15 fcol">
+                    <h6>SOCIAL LINKS</h6>
+                    <div class="social">
+                        <a href="https://in.linkedin.com/company/zomato" class="fa-brands fa-linkedin"></a>
+                        <a href="https://www.instagram.com/zomato/" class="fa-brands fa-square-instagram"></a>
+                        <a href="https://twitter.com/zomato" class="fa-brands fa-square-twitter"></a>
+                        <a href="https://www.youtube.com/zomato" class="fa-brands fa-youtube"></a>
+                        <a href="https://www.facebook.com/zomato" class="fa-brands fa-square-facebook"></a>
+                    </div>
+                    <div class="appstore store">
+                        <a href="https://link.zomato.com/xqzv/downloadZomatoIos"><img src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png"></a>
+                    </div>
+                    <div class="googleplay store">
+                        <a href="https://link.zomato.com/xqzv/downloadZomatoAndroid"><img src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png"></a>
+                    </div>
+                </div>
+            </section>
+            <p class="end">By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2024 © Zomato™ Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
